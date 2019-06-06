@@ -1,0 +1,29 @@
+@import "../assets/scss/colors";
+.wrapper{
+  max-width: 600px;
+  margin: 0 auto;
+  .btn{
+    padding: 10px 15px;
+    color: #fff;
+    background-color: #0B009F;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .lorem-list{
+    &-element{
+      list-style-type: none;
+      padding: 10px 15px;
+      border-bottom: 1px solid #dedede;
+      font-size: 16px;
+      text-align: center;
+      span.close-btn{
+        color: red;
+        font-size: 30px;
+        vertical-align: sub;
+        padding: 0 10px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+

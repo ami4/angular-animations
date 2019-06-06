@@ -1,0 +1,8 @@
+<div class="wrapper">
+    <button (click)="addLoremIpsum()" class="btn">Add lorem ipsum</button>
+    <h1 [@removeMe]="btnState">Fade Out when add new lorem ipsum</h1>
+    <ul class="lorem-list">
+        <li *ngFor="let item of loremArray; let i = index;" @fade (@fade.start)="animStart($event)"
+            (@fade.done)="animDone($event)" class="lorem-list-element">{{item}} <span (click)="deleteLoremIpsum(i)" class="close-btn">&times;</span></li>
+    </ul>
+</div>
